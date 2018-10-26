@@ -1,2 +1,2 @@
-# Creative_Coding_2018
+# Creative_Coding_Project_1
 For Project 1
