@@ -2,10 +2,12 @@
 //Drawing Machine for Project 1
 
 Moon myMoon; //declare moon object as global variable
-
+Eye eL, eR; //declare eye objects
 
 void setup() {
   myMoon = new Moon(125, 275, 100, 100, 25); //initialize moon object and call constructor, fill in arguements eventually
+  eL = new Eye(100,260,25);
+  eR = new Eye(150,255,25);
   size(800, 400);
   frameRate(10);
   noSmooth(); //kid drawing effect
@@ -14,6 +16,10 @@ void setup() {
 
 void draw() {
   myMoon.display(); //call object method 
+  eL.update(mouseX, mouseY);
+  eR.update(mouseX, mouseY);
+  eL.display();
+  eR.display();
   drawBrush(0, 0, 50); //user paints
   //float h = randomGaussian() * 50; //will be used to change moon when triggered by user
   noStroke();
