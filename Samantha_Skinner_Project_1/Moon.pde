@@ -16,7 +16,7 @@ class Moon {
   void display() { //create display function
     ellipseMode(CENTER);
     //Draw moon face
-    fill(245, 162, 199, 150);
+    fill(235, 200, 189, 150);
     noStroke();
     ellipse(x, y, w, h); 
 
