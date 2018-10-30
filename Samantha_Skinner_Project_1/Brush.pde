@@ -1,5 +1,5 @@
 void drawBrush(int x, int y, int d) {
-  fill(228, 0, 102);
+  fill(228, 122, 102);
   if (mousePressed) { //variable
   frameRate(40);
     pushMatrix();
