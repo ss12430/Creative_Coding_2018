@@ -1,11 +1,13 @@
 //Next
-
 //make 2 expressions for face depending on action
-//make diff color of lines depending on how many rays paints
 //add craters to moon
 
 //Questions
-//how to use mouseReleased function to trigger gaussian mvmt of moon
-//how to make user painted line move towards moon on mouse release
-//how to use perlin noise to make this mvmt^ look organic 
-//how to make moving pupils stay within eye circle
+//how to accomplish following?
+//user paints line with mouse pres
+  //upon mouse release, painted line moves toward moon like magnetic attraction
+      //use perlin noise to make this mvmt^ look organic & magnetic
+  //once painted line reaches moon: 
+      //trigger jiggle of moon - maybe w gaussian mvmt
+      //moons facial expression changes
+  
