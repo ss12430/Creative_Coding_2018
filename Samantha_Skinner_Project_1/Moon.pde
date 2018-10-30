@@ -12,7 +12,6 @@ class Moon {
     w = tempW;
     h = tempH;
     mouth = tempM;
-    //eyeSize = tempEyeSize;
   }
   void display() { //create display function
     ellipseMode(CENTER);
@@ -30,6 +29,10 @@ class Moon {
     noStroke();
     fill(0);
     ellipse(x, y + h/4, mouth*1.5, mouth - w/2);
+    
+   //draw tooth
+   fill(230);
+   ellipse(x, y+h/6, mouth/1.2, mouth/3);
   }
 }
 

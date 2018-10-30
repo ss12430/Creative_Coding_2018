@@ -1,3 +1,5 @@
+//referenced from processing.org reference on arctangent
+
 class Eye { //new class for eye
   int x, y; //declare variables
   int size;
@@ -15,12 +17,12 @@ class Eye { //new class for eye
 
   void display() { //create display function
     pushMatrix();
-    translate(x, y); 
-    fill(255);
-    ellipse(0, 0, size, size);
-    rotate(angle);
-    fill(0);
-    ellipse(size/4, 0, size/2, size/2);
+    translate(x, y); //translate from origin
+    fill(255); //white for eyeball
+    ellipse(0, 0, size, size); //eyeball
+    rotate(angle); //to rotate pupil
+    fill(0); //black for pupil
+    ellipse(size/4, 0, size/2, size/2); //pupil
     popMatrix();
   }
 }

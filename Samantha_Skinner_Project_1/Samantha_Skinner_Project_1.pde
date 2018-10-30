@@ -15,17 +15,17 @@ void setup() {
 }
 
 void draw() {
-  myMoon.display(); //call object method 
-  eL.update(mouseX, mouseY);
-  eR.update(mouseX, mouseY);
+    noStroke();
+   
+  myMoon.display(); //call object methods
   eL.display();
   eR.display();
-  drawBrush(0, 0, 50); //user paints
-  //float h = randomGaussian() * 50; //will be used to change moon when triggered by user
-  noStroke();
-  //fill (245, 162, 199, 150); //full moon color 
-  // ellipse(125, 275, h, h); //I eventually want this mvmt triggered by user
- // ellipse(125, 275, 100, 100); //full moon
+  
+  eL.update(mouseX, mouseY); 
+  eR.update(mouseX, mouseY);
+  
+  drawBrush(0, 0, 30); //user paints
+
   
   for (int x = -20; x < 900; x = x+150) { //create background star patterns
     for (int y = -20; y < 500; y = y+150) {
@@ -39,7 +39,7 @@ void keyPressed() { //reset work
   background(61, 44, 46); //same night sky color
 }
 
-//void mouseReleased(){ //function
+//void mouseReleased(){ //function will be used to change moon when triggered by user
 //  float h = randomGaussian() * 50;
 //  ellipse(125, 275, h, h);
 //}

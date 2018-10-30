@@ -1,5 +1,5 @@
 //Next
-//make pupils for moon follow mouse
+
 //make 2 expressions for face depending on action
 //make diff color of lines depending on how many rays paints
 //maybe make painted ellipse a diff shape
