@@ -9,3 +9,6 @@ void drawBrush(int x, int y, int d) {
     popMatrix();
   }
 }
+
+
+//could use pixels and identify by color of pixel paint, also look into createShape and put in locations user has drawn over into vertices, put this code block within "if mousePressed"
